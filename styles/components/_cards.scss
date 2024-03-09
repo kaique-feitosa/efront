@@ -3,21 +3,24 @@
 
 .cards {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 32px;
     padding: 2em 0;
     margin-top: 3em;
 
     .card {
-        padding: 0 1.5em;
+        @include mixins.tamanho-imagem(21em, auto);
+        padding: 1em 0;
 
         img {
             @include mixins.tamanho-imagem(56px, 56px);
+            border-radius: 4px
         }
 
         h2 {
             @include mixins.size-weight-color(1.5rem, 500, variaveis.$branco);
-            padding: 2rem 0;
+            padding: 1em 0;
         }
         
         p {

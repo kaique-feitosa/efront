@@ -2,6 +2,8 @@
 @use '../abstract/mixins';
 
 .anuncio {
+    display: flex;
+    flex-direction: column;
     margin: 0 auto;
     width: 90%;
 
@@ -17,25 +19,27 @@
                 @include mixins.tamanho-imagem(8.5em, 2.5em);
             }
 
-            p {
+            .alunos__texto {
                 @include mixins.size-weight-color(0.875rem, 500, variaveis.$branco);
             }
         }
 
-        h1 {
-            @include mixins.size-weight-color(1.75rem, 400, variaveis.$branco);
-            padding: 1em 0;
-            line-height: 33.6px;
+        .anuncio__infos {
+            .anuncio__titulo {
+                @include mixins.size-weight-color(1.75rem, 400, variaveis.$branco);
+                padding: 1em 0;
+                line-height: 33.6px;
 
-            span {
-                color: variaveis.$cor-principal;
+                span {
+                    color: variaveis.$cor-principal;
+                }
             }
-        }
 
-        p {
-            @include mixins.size-weight-color(1.125rem, 400, variaveis.$cinza);
-            line-height: 27px;
-            padding-bottom: 2em;
+            .anuncio__texto {
+                @include mixins.size-weight-color(1.125rem, 400, variaveis.$cinza);
+                line-height: 27px;
+                padding-bottom: 2em;
+            }
         }
     }
 
@@ -89,13 +93,14 @@
             gap: 16px;
             text-align: center;
 
-            a {
+            .pagamento__botao {
                 background-color: variaveis.$bg-botao;
                 @include mixins.size-weight-color(0.875rem, 700, variaveis.$branco);
                 text-decoration: none;
                 text-transform: uppercase;
                 border-radius: 4px;
                 padding: 1em 0;
+                width: 100%;
             }
 
             p {
@@ -103,4 +108,80 @@
             }
         }
     }
+}
+
+@media screen and (min-width: 768px) {
+    .anuncio {
+        .anuncio__banner {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .alunos {
+                .alunos__texto {
+                    font-size: 1.125rem;
+                }
+            }
+
+            .anuncio__infos {
+                text-align: center;
+                width: 70%;
+
+                .anuncio__titulo {
+                    font-size: 2.25rem;
+                    line-height: 43.2px;
+                    padding: 1em .4em;
+                }
+
+                .anuncio__texto {
+                    font-size: 1.25rem;
+                    line-height: 30px;
+                }
+            }
+        }
+
+        
+        &__preco {
+            @include mixins.tamanho-imagem(32em, 28em);
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .anuncio__desconto {
+                .desconto {
+                    font-size: 1.125rem;
+                    padding: 0.375em 1.5em;
+                }
+
+                .tempo {
+                    font-size: 1.125rem;
+                }
+            }
+
+            .anuncio__valores {
+                .anuncio__valor-antigo {
+                    font-size: 1.125rem;
+                }
+
+                .anuncio__valor-novo {
+                    font-size: 4rem;
+                }
+            }
+
+            .anuncio__pagamento {
+                gap: 24px;
+
+                .pagamento__botao {
+                    font-size: 1.25rem;
+                    padding: 1.25em 0;
+                }
+
+                p {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+
 }

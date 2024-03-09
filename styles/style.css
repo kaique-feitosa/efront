@@ -34,7 +34,21 @@ header .container a {
   text-decoration: none;
 }
 
+@media screen and (min-width: 768px) {
+  header .alerta {
+    font-size: 1rem;
+  }
+  header .container img {
+    width: 2em;
+    height: 2.5em;
+  }
+  header .container a {
+    font-size: 1, 25rem;
+  }
+}
 .anuncio {
+  display: flex;
+  flex-direction: column;
   margin: 0 auto;
   width: 90%;
 }
@@ -50,22 +64,22 @@ header .container a {
   width: 8.5em;
   height: 2.5em;
 }
-.anuncio .anuncio__banner .alunos p {
+.anuncio .anuncio__banner .alunos .alunos__texto {
   font-size: 0.875rem;
   font-weight: 500;
   color: #FFFFFF;
 }
-.anuncio .anuncio__banner h1 {
+.anuncio .anuncio__banner .anuncio__infos .anuncio__titulo {
   font-size: 1.75rem;
   font-weight: 400;
   color: #FFFFFF;
   padding: 1em 0;
   line-height: 33.6px;
 }
-.anuncio .anuncio__banner h1 span {
+.anuncio .anuncio__banner .anuncio__infos .anuncio__titulo span {
   color: #899BFF;
 }
-.anuncio .anuncio__banner p {
+.anuncio .anuncio__banner .anuncio__infos .anuncio__texto {
   font-size: 1.125rem;
   font-weight: 400;
   color: #CCCCCC;
@@ -123,7 +137,7 @@ header .container a {
   gap: 16px;
   text-align: center;
 }
-.anuncio__preco .anuncio__pagamento a {
+.anuncio__preco .anuncio__pagamento .pagamento__botao {
   background-color: #6477E7;
   font-size: 0.875rem;
   font-weight: 700;
@@ -132,6 +146,7 @@ header .container a {
   text-transform: uppercase;
   border-radius: 4px;
   padding: 1em 0;
+  width: 100%;
 }
 .anuncio__preco .anuncio__pagamento p {
   font-size: 0.75rem;
@@ -139,25 +154,83 @@ header .container a {
   color: #141726;
 }
 
+@media screen and (min-width: 768px) {
+  .anuncio .anuncio__banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .anuncio .anuncio__banner .alunos .alunos__texto {
+    font-size: 1.125rem;
+  }
+  .anuncio .anuncio__banner .anuncio__infos {
+    text-align: center;
+    width: 70%;
+  }
+  .anuncio .anuncio__banner .anuncio__infos .anuncio__titulo {
+    font-size: 2.25rem;
+    line-height: 43.2px;
+    padding: 1em 0.4em;
+  }
+  .anuncio .anuncio__banner .anuncio__infos .anuncio__texto {
+    font-size: 1.25rem;
+    line-height: 30px;
+  }
+  .anuncio__preco {
+    width: 32em;
+    height: 28em;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .anuncio__preco .anuncio__desconto .desconto {
+    font-size: 1.125rem;
+    padding: 0.375em 1.5em;
+  }
+  .anuncio__preco .anuncio__desconto .tempo {
+    font-size: 1.125rem;
+  }
+  .anuncio__preco .anuncio__valores .anuncio__valor-antigo {
+    font-size: 1.125rem;
+  }
+  .anuncio__preco .anuncio__valores .anuncio__valor-novo {
+    font-size: 4rem;
+  }
+  .anuncio__preco .anuncio__pagamento {
+    gap: 24px;
+  }
+  .anuncio__preco .anuncio__pagamento .pagamento__botao {
+    font-size: 1.25rem;
+    padding: 1.25em 0;
+  }
+  .anuncio__preco .anuncio__pagamento p {
+    font-size: 1rem;
+  }
+}
 .cards {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 32px;
   padding: 2em 0;
   margin-top: 3em;
 }
 .cards .card {
-  padding: 0 1.5em;
+  width: 21em;
+  height: auto;
+  padding: 1em 0;
 }
 .cards .card img {
   width: 56px;
   height: 56px;
+  border-radius: 4px;
 }
 .cards .card h2 {
   font-size: 1.5rem;
   font-weight: 500;
   color: #FFFFFF;
-  padding: 2rem 0;
+  padding: 1em 0;
 }
 .cards .card p {
   font-size: 1rem;
