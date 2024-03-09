@@ -1,0 +1,106 @@
+@use '../abstract/variaveis';
+@use '../abstract/mixins';
+
+.anuncio {
+    margin: 0 auto;
+    width: 90%;
+
+    .anuncio__banner {
+        padding: 2em 0;
+
+        .alunos {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+
+            img {
+                @include mixins.tamanho-imagem(8.5em, 2.5em);
+            }
+
+            p {
+                @include mixins.size-weight-color(0.875rem, 500, variaveis.$branco);
+            }
+        }
+
+        h1 {
+            @include mixins.size-weight-color(1.75rem, 400, variaveis.$branco);
+            padding: 1em 0;
+            line-height: 33.6px;
+
+            span {
+                color: variaveis.$cor-principal;
+            }
+        }
+
+        p {
+            @include mixins.size-weight-color(1.125rem, 400, variaveis.$cinza);
+            line-height: 27px;
+            padding-bottom: 2em;
+        }
+    }
+
+    &__preco {
+        background-color: variaveis.$branco;
+        border-radius: 6px;
+        padding: 2em 1.5em;
+
+        .anuncio__desconto {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .desconto {
+                background-color: variaveis.$bg-desconto;
+                color: variaveis.$branco;
+                @include mixins.size-weight-color(0.75rem, 700, variaveis.$branco);
+                text-transform: uppercase;
+                border-radius: 4px;
+                padding: 0.375em 1em;
+            }
+
+            .tempo {
+                @include mixins.size-weight-color(0.75rem, 500, variaveis.$cl-desconto);
+            }
+        }
+
+        .anuncio__valores {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            padding: 1.5em 0;
+
+            .anuncio__valor-antigo {
+                @include mixins.size-weight-color(0.875rem, 600, variaveis.$cl-desconto);
+
+                span {
+                    text-decoration: line-through;
+                }
+            }
+
+            .anuncio__valor-novo {
+                @include mixins.size-weight-color(3rem, 600, variaveis.$bg-desconto);
+            }
+        }
+
+        .anuncio__pagamento {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 16px;
+            text-align: center;
+
+            a {
+                background-color: variaveis.$bg-botao;
+                @include mixins.size-weight-color(0.875rem, 700, variaveis.$branco);
+                text-decoration: none;
+                text-transform: uppercase;
+                border-radius: 4px;
+                padding: 1em 0;
+            }
+
+            p {
+                @include mixins.size-weight-color(0.75rem, 500, variaveis.$cl-desconto);
+            }
+        }
+    }
+}

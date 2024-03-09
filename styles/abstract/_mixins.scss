@@ -1,0 +1,12 @@
+@use './variaveis';
+
+@mixin size-weight-color($size, $weight, $color) {
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+}
+
+@mixin tamanho-imagem($width, $height) {
+    width: $width;
+    height: $height;
+}

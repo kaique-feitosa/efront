@@ -1,0 +1,29 @@
+@use '../abstract/variaveis';
+@use '../abstract/mixins';
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    padding: 2em 0;
+    margin-top: 3em;
+
+    .card {
+        padding: 0 1.5em;
+
+        img {
+            @include mixins.tamanho-imagem(56px, 56px);
+        }
+
+        h2 {
+            @include mixins.size-weight-color(1.5rem, 500, variaveis.$branco);
+            padding: 2rem 0;
+        }
+        
+        p {
+            @include mixins.size-weight-color(1rem, 400, variaveis.$branco);
+            line-height: 25.6px;
+            width: 80%;
+        }
+    }
+}

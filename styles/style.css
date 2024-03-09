@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #09090A;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+header .alerta {
+  background-color: #121212;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 1em;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+}
+header .container img {
+  width: 20.1px;
+  height: 24px;
+}
+header .container a {
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.anuncio {
+  margin: 0 auto;
+  width: 90%;
+}
+.anuncio .anuncio__banner {
+  padding: 2em 0;
+}
+.anuncio .anuncio__banner .alunos {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.anuncio .anuncio__banner .alunos img {
+  width: 8.5em;
+  height: 2.5em;
+}
+.anuncio .anuncio__banner .alunos p {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #FFFFFF;
+}
+.anuncio .anuncio__banner h1 {
+  font-size: 1.75rem;
+  font-weight: 400;
+  color: #FFFFFF;
+  padding: 1em 0;
+  line-height: 33.6px;
+}
+.anuncio .anuncio__banner h1 span {
+  color: #899BFF;
+}
+.anuncio .anuncio__banner p {
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: #CCCCCC;
+  line-height: 27px;
+  padding-bottom: 2em;
+}
+.anuncio__preco {
+  background-color: #FFFFFF;
+  border-radius: 6px;
+  padding: 2em 1.5em;
+}
+.anuncio__preco .anuncio__desconto {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.anuncio__preco .anuncio__desconto .desconto {
+  background-color: #0B0C14;
+  color: #FFFFFF;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  border-radius: 4px;
+  padding: 0.375em 1em;
+}
+.anuncio__preco .anuncio__desconto .tempo {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #141726;
+}
+.anuncio__preco .anuncio__valores {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 1.5em 0;
+}
+.anuncio__preco .anuncio__valores .anuncio__valor-antigo {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #141726;
+}
+.anuncio__preco .anuncio__valores .anuncio__valor-antigo span {
+  text-decoration: line-through;
+}
+.anuncio__preco .anuncio__valores .anuncio__valor-novo {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #0B0C14;
+}
+.anuncio__preco .anuncio__pagamento {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  text-align: center;
+}
+.anuncio__preco .anuncio__pagamento a {
+  background-color: #6477E7;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 4px;
+  padding: 1em 0;
+}
+.anuncio__preco .anuncio__pagamento p {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #141726;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  padding: 2em 0;
+  margin-top: 3em;
+}
+.cards .card {
+  padding: 0 1.5em;
+}
+.cards .card img {
+  width: 56px;
+  height: 56px;
+}
+.cards .card h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #FFFFFF;
+  padding: 2rem 0;
+}
+.cards .card p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #FFFFFF;
+  line-height: 25.6px;
+  width: 80%;
+}/*# sourceMappingURL=style.css.map */

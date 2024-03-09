@@ -1,0 +1,27 @@
+@use '../abstract/variaveis';
+@use '../abstract/mixins';
+
+header {
+    .alerta {
+        background-color: variaveis.$cinza-escuro;
+        @include mixins.size-weight-color(0.875rem, 500, variaveis.$branco);
+        text-align: center;
+        padding: 1em;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.5rem;
+
+        img {
+            @include mixins.tamanho-imagem(20.1px, 24px);
+        }
+
+        a {
+            @include mixins.size-weight-color(0.875rem, 400, variaveis.$branco);
+            text-decoration: none;
+        }
+    }
+}
