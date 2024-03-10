@@ -185,3 +185,71 @@
     }
 
 }
+
+@media screen and (min-width: 1440px) {
+    .anuncio {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        width: 70%;
+        padding: 5em 0;
+        
+        .anuncio__banner {
+            align-items: flex-start;
+
+            .alunos {
+                align-items: center;
+
+                img {
+                    @include mixins.tamanho-imagem(8.625em, 3em);
+                }
+            }
+
+            .anuncio__infos {
+                text-align: start;
+                width: 88%;
+
+                .anuncio__titulo {
+                    font-size: 3.25rem;
+                    line-height: 62.4px;
+                    padding: 1em 0;
+                }
+
+                .anuncio__texto {
+                    font-size: 1.75rem;
+                    line-height: 42px;
+                }
+            }
+        }
+
+        &__preco {
+            @include mixins.tamanho-imagem(32.5em, 30em);
+
+            .anuncio__desconto {
+                justify-content: flex-start;
+                gap: 24px;
+
+                .desconto {
+                    line-height: 27px;
+                }
+            }
+
+            .anuncio__valores {
+                .anuncio__valor-antigo {
+                    font-size: 1.5rem;
+                }
+
+                .anuncio__valor-novo {
+                    font-size: 4.5rem;
+                    padding-top: 1.5rem;
+                }
+            }
+
+            .anuncio__pagamento {
+                .pagamento__botao:hover {
+                    opacity: .8;
+                }
+            }
+        }
+    }
+}

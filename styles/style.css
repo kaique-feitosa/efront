@@ -10,10 +10,10 @@ body {
 }
 
 header .alerta {
-  background-color: #121212;
+  background-color: #899BFF;
   font-size: 0.875rem;
   font-weight: 500;
-  color: #FFFFFF;
+  color: #141726;
   text-align: center;
   padding: 1em;
 }
@@ -43,7 +43,19 @@ header .container a {
     height: 2.5em;
   }
   header .container a {
-    font-size: 1, 25rem;
+    font-size: 1.25rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  header .alerta {
+    font-size: 1.125rem;
+  }
+  header .container {
+    justify-content: space-around;
+  }
+  header .container a:hover {
+    color: #899BFF;
+    transition: 0.2s;
   }
 }
 .anuncio {
@@ -208,6 +220,59 @@ header .container a {
     font-size: 1rem;
   }
 }
+@media screen and (min-width: 1440px) {
+  .anuncio {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    width: 70%;
+    padding: 5em 0;
+  }
+  .anuncio .anuncio__banner {
+    align-items: flex-start;
+  }
+  .anuncio .anuncio__banner .alunos {
+    align-items: center;
+  }
+  .anuncio .anuncio__banner .alunos img {
+    width: 8.625em;
+    height: 3em;
+  }
+  .anuncio .anuncio__banner .anuncio__infos {
+    text-align: start;
+    width: 88%;
+  }
+  .anuncio .anuncio__banner .anuncio__infos .anuncio__titulo {
+    font-size: 3.25rem;
+    line-height: 62.4px;
+    padding: 1em 0;
+  }
+  .anuncio .anuncio__banner .anuncio__infos .anuncio__texto {
+    font-size: 1.75rem;
+    line-height: 42px;
+  }
+  .anuncio__preco {
+    width: 32.5em;
+    height: 30em;
+  }
+  .anuncio__preco .anuncio__desconto {
+    justify-content: flex-start;
+    gap: 24px;
+  }
+  .anuncio__preco .anuncio__desconto .desconto {
+    line-height: 27px;
+  }
+  .anuncio__preco .anuncio__valores .anuncio__valor-antigo {
+    font-size: 1.5rem;
+  }
+  .anuncio__preco .anuncio__valores .anuncio__valor-novo {
+    font-size: 4.5rem;
+    padding-top: 1.5rem;
+  }
+  .anuncio__preco .anuncio__pagamento .pagamento__botao:hover {
+    opacity: 0.8;
+  }
+}
 .cards {
   display: flex;
   justify-content: center;
@@ -238,4 +303,13 @@ header .container a {
   color: #FFFFFF;
   line-height: 25.6px;
   width: 80%;
+}
+
+@media screen and (min-width: 1440px) {
+  .cards {
+    margin: 0;
+  }
+  .cards .card {
+    width: 17.5em;
+  }
 }/*# sourceMappingURL=style.css.map */

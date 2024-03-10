@@ -30,3 +30,12 @@
         }
     }
 }
+
+@media screen and (min-width: 1440px) {
+    .cards {
+        margin: 0;
+        .card {
+            width: 17.5em;
+        }
+    }
+}

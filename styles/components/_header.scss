@@ -3,8 +3,8 @@
 
 header {
     .alerta {
-        background-color: variaveis.$cinza-escuro;
-        @include mixins.size-weight-color(0.875rem, 500, variaveis.$branco);
+        background-color: variaveis.$cor-principal;
+        @include mixins.size-weight-color(0.875rem, 500,variaveis.$cl-desconto);
         text-align: center;
         padding: 1em;
     }
@@ -38,7 +38,24 @@ header {
             }
 
             a {
-                font-size: 1,25rem;
+                font-size: 1.25rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    header {
+        .alerta {
+            font-size: 1.125rem;
+        }
+
+        .container {
+            justify-content: space-around;
+
+            a:hover {
+                color: variaveis.$cor-principal;
+                transition: .2s;
             }
         }
     }
