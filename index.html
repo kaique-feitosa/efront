@@ -1,81 +1,95 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>eFront</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200..800&family=Sora:wght@600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/style.css">
-</head>
-<body>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200..800&family=Sora:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
     <header>
-        <p class="alerta">Aproveite os últimos dias de promoção</p>
-        <div class="container">
-            <img src="images/logo.svg" alt="Logo efront">
-            <a href="#">Perguntas frequentes</a>
-        </div>
+      <p class="alerta">Aproveite os últimos dias de promoção</p>
+      <div class="container">
+        <img src="images/logo.svg" alt="Logo efront" />
+        <a href="#">Perguntas frequentes</a>
+      </div>
     </header>
 
     <main>
+      <section class="anuncio">
+        <div class="anuncio__banner">
+          <div class="alunos">
+            <img src="images/avatars.svg" alt="Fotos dos alunos eFront" />
+            <p class="alunos__texto">Junta-se a +10.000 alunos</p>
+          </div>
+          <div class="anuncio__infos">
+            <h1 class="anuncio__titulo">
+              Comece a estudar <span>front-end</span> do zero com uma linguagem
+              simples
+            </h1>
+            <p class="anuncio__texto">
+              Trabalhe de casa, usando as tecnologias mais requisitados do
+              mercado frontend.
+            </p>
+          </div>
+        </div>
 
-        <section class="anuncio">
+        <div class="anuncio__preco">
+          <div class="anuncio__desconto">
+            <p class="desconto">90% off</p>
+            <p class="tempo">Por tempo limitado</p>
+          </div>
+          <div class="anuncio__valores">
+            <p class="anuncio__valor-antigo">De <span>R$ 100,00</span> por</p>
+            <p class="anuncio__valor-novo">R$ 10,00</p>
+          </div>
+          <div class="anuncio__pagamento">
+            <a href="#" class="pagamento__botao">Quero comprar agora</a>
+            <p>Cartão de crédito, Boleto à vista, PayPal e Pix</p>
+          </div>
+        </div>
+      </section>
 
-            <div class="anuncio__banner">
-                <div class="alunos">
-                    <img src="images/avatars.svg" alt="Fotos dos alunos eFront">
-                    <p class="alunos__texto">Junta-se a +10.000 alunos</p>
-                </div>
-                <div class="anuncio__infos">
-                    <h1 class="anuncio__titulo">Comece a estudar <span>frontend</span> do zero com uma linguagem simples</h1>
-                    <p class="anuncio__texto">Trabalhe de casa, usando as tecnologias mais requisitados do mercado frontend.</p>
-                </div>
-            </div>
-
-            <div class="anuncio__preco">
-                <div class="anuncio__desconto">
-                    <p class="desconto">90% off</p>
-                    <p class="tempo">Por tempo limitado</p>
-                </div>
-                <div class="anuncio__valores">
-                    <p class="anuncio__valor-antigo">De <span>R$ 100,00</span> por</p>
-                    <p class="anuncio__valor-novo">R$ 10,00</p>
-                </div>
-                <div class="anuncio__pagamento">
-                    <a href="#" class="pagamento__botao">Quero comprar agora</a>
-                    <p>Cartão de crédito, Boleto à vista, PayPal e Pix</p>
-                </div>
-            </div>
-
-        </section>
-
-        <section class="cards">
-
-            <div class="card">
-                <img src="images/reembolso-icon.svg" alt="">
-                <h2>Reembolso</h2>
-                <p>Se por algum motivo você não gostar dos materiais você pode reembolsar sem taxa e perguntas.</p>
-            </div>
-            <div class="card">
-                <img src="images/vitalicio-icon.svg" alt="">
-                <h2>Vitalício</h2>
-                <p>Você tem acesso a todas as atualizações e para sempre. Basta acessar a plataforma da Hotmart.</p>
-            </div>
-            <div class="card">
-                <img src="images/comunidade-icon.svg" alt="">
-                <h2>Comunidade</h2>
-                <p>Você terá acesso a comunidade exclusiva do Discord, onde utilizamos para resolver dúvidas.</p>
-            </div>
-            <div class="card">
-                <img src="images/notion-icon.svg" alt="">
-                <h2>Notion</h2>
-                <p>Através do Notion você tem acesso aos materiais para realizar os estudos sobre frontend e design.</p>
-            </div>
-
-        </section>
-
+      <section class="cards">
+        <div class="card">
+          <img src="images/reembolso-icon.svg" alt="" />
+          <h2>Reembolso</h2>
+          <p>
+            Se por algum motivo você não gostar dos materiais você pode
+            reembolsar sem taxa e perguntas.
+          </p>
+        </div>
+        <div class="card">
+          <img src="images/vitalicio-icon.svg" alt="" />
+          <h2>Vitalício</h2>
+          <p>
+            Você tem acesso a todas as atualizações e para sempre. Basta acessar
+            a plataforma da Hotmart.
+          </p>
+        </div>
+        <div class="card">
+          <img src="images/comunidade-icon.svg" alt="" />
+          <h2>Comunidade</h2>
+          <p>
+            Você terá acesso a comunidade exclusiva do Discord, onde utilizamos
+            para resolver dúvidas.
+          </p>
+        </div>
+        <div class="card">
+          <img src="images/notion-icon.svg" alt="" />
+          <h2>Notion</h2>
+          <p>
+            Através do Notion você tem acesso aos materiais para realizar os
+            estudos sobre frontend e design.
+          </p>
+        </div>
+      </section>
     </main>
-</body>
+  </body>
 </html>
